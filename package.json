@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "eslint:check": "next lint",
+    "eslint:fix:": "next lint -- --fix",
+    "prettier:check": "prettier --check './src/**/*.{js,jsx,ts,tsx}'",
+    "prettier:fix": "prettier --write './src/**/*.{js,jsx,ts,tsx}'"
   },
   "dependencies": {
     "next": "11.0.1",
